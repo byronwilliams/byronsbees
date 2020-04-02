@@ -1,0 +1,5 @@
+{{ if .IsNamedParams }}
+<img src="https://byron-buzz.imgix.net/{{.Get "src"}}?auto=compress&w=670&fit=crop&crop=entropy" alt="">
+{{ else }}
+<img src="https://byron-buzz.imgix.net/{{.Get 0}}?auto=compress&w=670&fit=crop&crop=entropy" alt="">
+{{ end }}

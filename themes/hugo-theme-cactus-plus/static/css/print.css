@@ -1,0 +1,27 @@
+.main-nav {
+    display: none;
+}
+
+#wrapper {
+    padding: initial;
+}
+
+.post h1 {
+    margin: 0;
+}
+
+.post h2.headline .tags {
+    display: none;
+}
+
+.post h2.headline {
+    margin-bottom: 10px;
+}
+
+.author {
+    display: initial;
+}
+
+#footer {
+    display: none;
+}
