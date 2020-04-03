@@ -2,6 +2,7 @@
 title: Byron and the bees
 date: 2019-10-20
 image: https://byron-buzz.imgix.net/bw.jpg
+hidden: true
 ---
 
 That's me! I keep 20 colonies of bees around Blackawton in the South Hams, Devon.
