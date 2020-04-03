@@ -2,6 +2,7 @@
 title: Local Honey
 date: 2020-04-02
 noDate: true
+hidden: true
 ---
 <!-- 
     put this back once I've got some nice Devon labels
