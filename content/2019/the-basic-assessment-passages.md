@@ -2,6 +2,7 @@
 title: Comments on Beekeeping Study Notes
 date: 2019-11-05
 image: https://byron-buzz.imgix.net/IMG_20190913_094448_messy.jpg
+draft: true
 ---
 
 I purchased the Beekeeping Study Nodes by JD and BD Yates. 

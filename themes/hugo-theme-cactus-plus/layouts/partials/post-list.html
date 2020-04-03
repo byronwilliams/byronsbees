@@ -1,4 +1,21 @@
 <ul id="post-list">
+    <!-- <li>
+        <aside class="dates">&rarr;</aside>
+        <a href='/queens'>
+            Locally Mated Queens
+           <h2>Buy locally mated queens from Blackawton, Devon</h2>
+        </a>
+    </li> -->
+    <li>
+        <aside class="dates">&rarr;</aside>
+        <a href='/honey'>
+            Local Honey
+           <h2>Buy local honey from South Devon</h2>
+        </a>
+    </li>
+
+    <hr />
+
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
     {{ $url := replace .Permalink .Site.BaseURL "" }}
         {{ if ne $url "about/" }}
