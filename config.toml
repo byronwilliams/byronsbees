@@ -6,4 +6,4 @@ theme = "hugo-theme-cactus-plus"
 googleAnalytics = "UA-134522498-9"
 
 [params]
-    enableGoogleAnalytics = true
+    enableGoogleAnalytics = false
