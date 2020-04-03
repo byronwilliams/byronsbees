@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://byronsbees.co.uk/"
 languageCode = "en-gb"
 title = "Byron and the bees"
 theme = "hugo-theme-cactus-plus"
