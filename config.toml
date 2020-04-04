@@ -7,3 +7,6 @@ googleAnalytics = "UA-134522498-9"
 
 [params]
     enableGoogleAnalytics = false
+
+[markup.goldmark.renderer]
+unsafe= true
