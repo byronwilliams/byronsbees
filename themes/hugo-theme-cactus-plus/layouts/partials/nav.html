@@ -8,7 +8,7 @@
 	<a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
 
 	{{ range $key, $val := .Site.Params.Links }}
-		<a href="{{ $val }}">{{ $key }}</a>
+		<a href="{{ $val.path }}">{{ $val.name }}</a>
 	{{ end }}
 
 	{{ if .Site.Params.enableRSS }}

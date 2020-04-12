@@ -1,0 +1,14 @@
+baseURL: 'https://byronsbees.co.uk/'
+languageCode: en-gb
+title: Byron and the bees
+theme: hugo-theme-cactus-plus
+googleAnalytics: UA-134522498-9
+params:
+  enableGoogleAnalytics: false
+  links:
+    - name: Stats
+      path: /stats
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

@@ -12,6 +12,6 @@ Normally I build websites and API integrations at [Fika Studio](https://fika.stu
 My brother [Dryden](https://www.drydenwilliams.co.uk) helps me out and my mum [Wendy](https://www.etsy.com/uk/shop/WendysCandles)
 makes candles from local beeswax from around the country.
 
-- If you have a **swarm** please contact the [Totnes and Kingsbridge Beekeeping Association](https://beekeepingsouthdevon.uk/swarms)
+- If you have a **swarm** please contact the [Totnes and Kingsbridge Beekeepers](https://beekeepingsouthdevon.uk/swarms)
 
 You can email at: [byron@112percent.com](mailto:byron@112percent.com)
