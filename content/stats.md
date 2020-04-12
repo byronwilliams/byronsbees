@@ -33,7 +33,7 @@ var chart = new Chart(ctx, {
 
 });
 
-    fetch("http://api.live.apisdex.com/api/v0/stats")
+    fetch("https://api.live.apisdex.com/api/v0/stats")
         .then((resp) => resp.json())
         .then((data) => {
             chart.data.labels = [];
