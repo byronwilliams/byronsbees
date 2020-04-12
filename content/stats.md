@@ -24,8 +24,16 @@ var chart = new Chart(ctx, {
    options: {
         scales: {
             yAxes: [{
+                id: 'A',
+                type: 'linear',
+                position: 'left',
+                stacked: true,
+                scaleLabel: {
+                labelString: "# Frames",
+                display: true,
+                },
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
                 }
             }]
         }
@@ -33,13 +41,14 @@ var chart = new Chart(ctx, {
 
 });
 
-    fetch("https://api.live.apisdex.com/api/v0/stats")
+    fetch("https://api.live.apisdex.com/api/v0/stats?username=byron&key=8e9af3jjtxpDFwmb")
         .then((resp) => resp.json())
         .then((data) => {
             chart.data.labels = [];
 
 const brood = {
             label: 'Brood',
+            yAxisID: 'A',
             backgroundColor: 'rgb(145, 127, 97)',
             borderColor: 'rgb(255,255,255)',
             data: []
@@ -47,6 +56,7 @@ const brood = {
 
 const honey = {
             label: 'Honey',
+            yAxisID: 'A',
             backgroundColor: 'rgb(226,214,0)',
             borderColor: 'rgb(255,255,255)',
             data: []
@@ -54,6 +64,7 @@ const honey = {
 
 const pollen = {
             label: 'Pollen',
+            yAxisID: 'A',
             backgroundColor: 'rgb(224,110,162)',
             borderColor: 'rgb(255,255,255)',
             data: []
