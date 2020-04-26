@@ -1,0 +1,61 @@
+<canvas id="colonyStats"></canvas>
+
+<script>
+    (function() {
+        var ctx = document.getElementById('colonyStats').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: [],
+        datasets: []
+    },
+
+    // Configuration options go here
+   options: {
+        scales: {
+            yAxes: [{
+                id: 'A',
+                type: 'linear',
+                position: 'left',
+                stacked: true,
+                scaleLabel: {
+                labelString: "# Colonies",
+                display: true,
+                },
+                ticks: {
+                    beginAtZero: true,
+                }
+            }]
+        }
+    }
+
+});
+
+    fetch("https://api.live.apisdex.com/api/v0/stats?username=byron&key=8e9af3jjtxpDFwmb&extended=true")
+        .then((resp) => resp.json())
+        .then((data) => {
+            chart.data.labels = [];
+
+const colonies = {
+            label: 'Colonies',
+            yAxisID: 'A',
+            backgroundColor: 'rgb(36, 57, 89)',
+            borderColor: 'rgb(255,255,255)',
+            data: []
+        };
+
+        data.forEach((d) => {
+            chart.data.labels.push(d.Date.split("T")[0]);
+            colonies.data.push(d.TotalColonies);
+        })
+
+        chart.data.datasets = [colonies];
+
+
+            chart.update();
+        })
+    })()
+</script>
