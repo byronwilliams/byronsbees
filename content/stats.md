@@ -2,6 +2,7 @@
 title: Beekeeping Statistics
 date: 2020-04-12
 type: stats
+hidden: true
 ---
 
 {{<framestats>}}

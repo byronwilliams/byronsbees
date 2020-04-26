@@ -22,6 +22,45 @@ hidden: true
     </li>
 </ul>
 
+<hr />
+
+<ul id="post-list">
+    <li>
+        <aside class="dates">&rarr;</aside>
+        <a target="_blank" href='mailto:byron@112percent.com?subject=Order+Dartmouth+Queen'>
+            Dartmouth Mated Queens (South Hams, Devon)
+           <h2><b>Availabilty: Mid-May</b></h2>
+           <h2><b>Price: £30 + P&P</b></h2>
+           <h2><b>Marked: Yes, Clipped: No</b></h2>
+           <h2><b>
+                &gt; Order your queen
+                </b>
+           </h2>
+        </a>
+    </li>
+</ul>
+
+<hr />
+
+<ul id="post-list">
+    <li>
+        <aside class="dates">&rarr;</aside>
+        <a target="_blank" href='mailto:byron@112percent.com?subject=Order+Tigley+Cross+Queen'>
+            Tigley Cross Mated Queens (Totnes, South Hams, Devon)
+           <h2><b>Availabilty: Mid-May</b></h2>
+           <h2><b>Price: £30 + P&P</b></h2>
+           <h2><b>Marked: Yes, Clipped: No</b></h2>
+           <h2><b>
+                &gt; Order your queen
+                </b>
+           </h2>
+        </a>
+    </li>
+</ul>
+
+<hr />
+
+
 I score all of my colonies at every visit, I keep inspections and I record the
 honey yield; I combine the results and get an overall colony score. 
 Underperforming colonies will be replaced and new nucs will be built up with
