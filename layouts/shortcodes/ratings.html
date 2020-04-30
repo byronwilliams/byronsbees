@@ -1,0 +1,69 @@
+<canvas id="ratings-canvas"></canvas>
+
+<script>
+    (function() {
+        Chart.defaults.line.spanGaps = true;
+
+        var ctx = document.getElementById('ratings-canvas').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: [],
+        datasets: []
+    },
+
+//     // Configuration options go here
+//    options: {
+//         scales: {
+//             yAxes: [{
+//                 id: 'A',
+//                 type: 'linear',
+//                 position: 'left',
+//                 scaleLabel: {
+//                 labelString: "1-5 Rating",
+//                 display: true,
+//                 },
+//                 ticks: {
+//                     beginAtZero: true,
+//                 }
+//             }]
+//         }
+//     }
+
+});
+
+    fetch("https://api.live.apisdex.com/api/v0/stats?username=byron&key=8e9af3jjtxpDFwmb&extended=true")
+        .then((resp) => resp.json())
+        .then((data) => {
+            chart.data.labels = [];
+
+        const minRating = {
+            fill: false,
+            label: 'Min Rating',
+            borderColor: 'rgb(36, 57, 89)',
+            data: []
+        };
+
+        const avgRating = {
+            fill: false,
+            label: 'Avg Rating',
+            borderColor: 'rgb(105,149.56)',
+            data: []
+        };
+
+        data.forEach((d) => {
+            chart.data.labels.push(d.Date.split("T")[0]);
+            avgRating.data.push({ x: d.Date.split("T")[0], y: d.AverageAvgRating });
+            minRating.data.push({ x: d.Date.split("T")[0], y: d.AverageMinRating });
+        })
+
+        chart.data.datasets = [minRating, avgRating];
+
+
+            chart.update();
+        })
+    })()
+</script>

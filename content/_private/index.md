@@ -14,3 +14,7 @@ private: true
 
 ## Colony Stats
 {{<colonystats>}}
+
+
+## Ratings
+{{<ratings>}}
