@@ -15,23 +15,31 @@ var chart = new Chart(ctx, {
         datasets: []
     },
 
-//     // Configuration options go here
-//    options: {
-//         scales: {
-//             yAxes: [{
-//                 id: 'A',
-//                 type: 'linear',
-//                 position: 'left',
-//                 scaleLabel: {
-//                 labelString: "1-5 Rating",
-//                 display: true,
-//                 },
-//                 ticks: {
-//                     beginAtZero: true,
-//                 }
-//             }]
-//         }
-//     }
+    // Configuration options go here
+   options: {
+        scales: {
+            yAxes: [{
+                id: 'A',
+                type: 'linear',
+                position: 'left',
+                scaleLabel: {
+                labelString: "1-5 Rating",
+                display: true,
+                },
+                ticks: {
+                    beginAtZero: true,
+                }
+            }],
+            xAxes: [
+                {
+                    type: "time",
+                    time: {
+                        unit: "week"
+                    }
+                }
+            ]
+        }
+    }
 
 });
 

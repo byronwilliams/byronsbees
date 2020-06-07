@@ -1,4 +1,6 @@
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.24.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.1"></script>
 
 <canvas id="totalFrameStats"></canvas>
 
@@ -30,7 +32,15 @@ var chart = new Chart(ctx, {
                 ticks: {
                     beginAtZero: true,
                 }
-            }]
+            }],
+            xAxes: [
+                {
+                    type: "time",
+                    time: {
+                        unit: "week"
+                    }
+                }
+            ]
         }
     }
 

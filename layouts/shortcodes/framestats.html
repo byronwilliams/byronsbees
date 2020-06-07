@@ -1,4 +1,6 @@
-<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3"></script>
+<script src="https://cdn.jsdelivr.net/npm/luxon@1.24.1"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@0.2.1"></script>
 
 <canvas id="frameStats"></canvas>
 
@@ -30,7 +32,15 @@ var chart = new Chart(ctx, {
                 ticks: {
                     beginAtZero: true,
                 }
-            }]
+            }],
+            xAxes: [
+                {
+                    type: "time",
+                    time: {
+                        unit: "week"
+                    }
+                }
+            ]
         }
     }
 
@@ -66,7 +76,7 @@ const pollen = {
         };
 
         data.forEach((d) => {
-            chart.data.labels.push(d.Date.split("T")[0]);
+            chart.data.labels.push(d.Date);
             brood.data.push(Math.round(d.AverageBrood*100)/100);
             honey.data.push(Math.round(d.AverageHoney*100)/100);
             pollen.data.push(Math.round(d.AveragePollen*100)/100);

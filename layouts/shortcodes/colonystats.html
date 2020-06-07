@@ -28,7 +28,15 @@ var chart = new Chart(ctx, {
                 ticks: {
                     beginAtZero: true,
                 }
-            }]
+            }],
+            xAxes: [
+                {
+                    type: "time",
+                    time: {
+                        unit: "week"
+                    }
+                }
+            ]
         }
     }
 
