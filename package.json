@@ -12,6 +12,6 @@
   "scripts": {
     "install": "curl -L -O https://github.com/gohugoio/hugo/releases/download/v0.68.3/hugo_0.68.3_Linux-64bit.tar.gz && tar -xzf hugo_0.68.3_Linux-64bit.tar.gz",
     "build": "HUGO_PARAMS_ENABLEGOOGLEANALYTICS=true ./hugo --gc",
-    "dev": "./hugo -v serve -w"
+    "develop": "./hugo -v serve -w"
   }
 }

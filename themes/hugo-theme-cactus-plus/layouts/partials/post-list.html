@@ -1,5 +1,5 @@
 <ul id="post-list">
-    <li>
+    <!-- <li>
         <aside class="dates">&rarr;</aside>
         <a href='/queens'>
             Locally Mated Queens
@@ -14,7 +14,7 @@
         </a>
     </li>
 
-    <hr />
+    <hr /> -->
 
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
     {{ $url := replace .Permalink .Site.BaseURL "" }}
