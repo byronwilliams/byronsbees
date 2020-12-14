@@ -36,4 +36,3 @@ jobs:
           SOURCE_DIR: 'public'      # optional: defaults to entire repository
           AWS_S3_ENDPOINT: https://app-1.is1.figroll.io
           DEST_DIR: public_html
-          SOURCE_DIR: public
